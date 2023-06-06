@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="src/script.js"></script>
+</head>
+
+<body>
+  <div class="conteudo" id="bg_green">
+
+  <!--  inicio sesão superior, barra de navegação (links)     -->
+
+  <div class="w3-container">
+
+    <img id="img_logo" src="../projeto_03_pat_ilhabela/media/vverde_logo.png" alt="logo Via Verde">
+    <img id="img_logo" src="../projeto_03_pat_ilhabela/media/pat_logo.png" alt="logo pat">
+
+    <div class="w3-panel" id="bg_panel"></div>
+
+    <button onclick="document.getElementById('vaga').style.display='block'" class="w3-button w3-hover-teal"><i
+        class="fa fa-address-card"></i> Consultar Vagas</button>
+
+    <button onclick="document.getElementById('agenda').style.display='block'" class="w3-button w3-hover-teal"><i
+        class="fa fa-book"></i>
+      Fazer Agendamento</button>
+
+    <button onclick="document.getElementById('mapa').style.display='block'" class="w3-button w3-hover-teal"><i
+        class="fa fa-map"></i>
+      Como Chegar</button>
+  </div>
+
+  <!-- fim da sessao superior -->
+
+
+  <!-- inicio conteudo primcipal -->
+
+    <div class="w3-container w3-teal">
+      <h1>ILHABELA</h1>
+    </div>
+
+    <!-- inicio dos cards -->
+
+    <div class="w3-row-padding w3-margin">
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="../projeto_03_pat_ilhabela/media/pref_mini.png" style="width:100%">
+          <div class="w3-container">
+            <h5><a href="https://www.ilhabela.sp.gov.br/" class="w3-button w3-block w3-teal"><i class="fa fa-house"></i>
+                Portal Prefeitura Ilhabela </a></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="../projeto_03_pat_ilhabela/media/tur_mini.png" style="width:100%">
+          <div class="w3-container">
+            <h5><a href="https://turismoilhabela.com/" class="w3-button w3-block w3-teal"><i class="fa fa-house"></i>
+                Portal Turismo Ilhabela </a></h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card">
+          <img src="../projeto_03_pat_ilhabela/media/funda_mini.png" style="width:100%">
+          <div class="w3-container">
+            <h5><a href="https://fundaci.org/ilhabela/" class="w3-button w3-block w3-teal"><i class="fa fa-house"></i>
+                Portal Fundaci </a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fim dos cards -->
+
+
+    <div class="social w3-margin">
+      <a href="https://www.facebook.com/PrefeituraIlhabela"> <i id="info" class="fa fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/prefeituradeilhabelaoficial/"> <i id="info" class="fa fa-instagram fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCGDXc2bhsr5Fqv_9X-B8AAQ"> <i id="info" class="fa fa-youtube fa-2x"></i></a>
+    </div>
+
+    <div class="w3-container w3-margin w3-small w3-opacity">
+      <div class="w3-left-align">
+        <p>Espaço de Atendimento ao Cidadão “Via Verde”</p>
+        <p>Avenida Princesa Isabel, 1533 - Perequê
+          CEP 11630-000</p>
+        <p>Tel: 12 3896 9200</p>
+
+      </div>
+
+    </div>
+
+  
+
+  <!-- fim do conteudo primcipal -->
+
+  <!-- conteudo dos modais -->
+
+  <div id="vaga" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('vaga').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <img src="../projeto_03_pat_ilhabela/media/vaga.webp" alt="" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div id="agenda" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-center">
+        <span onclick="document.getElementById('agenda').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <iframe id="calendario" src="https://koalendar.com/e/atendimento-pat" width="100%"
+          style="border:none;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="mapa" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-center">
+        <span onclick="document.getElementById('mapa').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0846415719225!2d-45.37044918183579!3d-23.815589034734455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d299fd3f8a1153%3A0xdd75b4cb3cd6f196!2sAv.%20Princesa%20Isabel%2C%201333%20-%20Ilhabela%2C%20SP%2C%2011630-000!5e0!3m2!1spt-BR!2sbr!4v1659211295425!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- fim dos modais -->
+
+  </div>
+
+</body>
+
+</html>
